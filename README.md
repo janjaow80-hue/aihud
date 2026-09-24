@@ -1,6 +1,3 @@
-export default {
-  async fetch(request, env, ctx) {
-    const html = `<!DOCTYPE html><html lang="th" style="--header-height:48px;">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -620,5 +617,3 @@ export default {
             document.getElementById('success-ticket-card').style.display = 'block';
         });
     </script>
-</body>
-</html>
