@@ -753,7 +753,6 @@
                 </div>
             </div>
         `;
-
         document.body.appendChild(alertOverlay);
 
         document.getElementById('warp-action-btn').onclick = function() {
@@ -770,4 +769,3 @@
     }
 </script>
 </body>
-</html>
