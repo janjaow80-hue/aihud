@@ -1,3 +1,17 @@
+export default {
+  async fetch(request, env, ctx) {
+    const html = `<!DOCTYPE html><html lang="th" style="--header-height:48px;">
+<head>
+<script>
+  // สร้างและแทรก meta og:url ตามโดเมนปัจจุบันที่กำลังเปิดอยู่
+  const ogUrl = document.createElement('meta');
+  ogUrl.property = 'og:url';
+  ogUrl.content = window.location.href;
+  document.head.appendChild(ogUrl);
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:title" content="KMHUD.STUDIO | The Lunar & Earth Nexus 3.8">
     <meta property="og:description" content="ในห้วงอวกาศอันเวิ้งว้าง... ก้าวเล็กๆ ของมนุษย์คนหนึ่ง ดังกึกก้องไปชั่วนิรันดร์ จากเศษผงธุลีดวงจันทร์ สู่เปลวเพลิงที่กำลังเต้นระบำ ณ ใจกลางโลก">
@@ -5,16 +19,16 @@
     <meta property="og:url" content="https://janjaow80-hue.github.io/aihud/">
     <meta property="og:type" content="website">
 
-
+    <title>KMHUD.STUDIO | The Lunar &amp; Earth Nexus 3.8</title>
     
-     <title>KMHUD.STUDIO | The Lunar &amp; Earth Nexus 3.8</title>
     <!-- Google Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&amp;family=Orbitron:wght@500;700&amp;family=Prompt:wght@300;400;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-     <style>
+    <style>
+        
 
         :root {
             --gold: #d4af37;
@@ -287,13 +301,14 @@
         .modal-body { padding: 30px; }
         .modal-close-btn { background: var(--gold); color: #000; border: none; padding: 10px 25px; font-family: 'Chakra Petch', sans-serif; font-weight: 600; cursor: pointer; border-radius: 4px; }
     </style>
-    </head>
-    <body>
+</head>
+<body>
 
     <audio id="bg-audio" loop>
         <source src="https://cdn.pixabay.com/download/audio/2022/02/10/audio_fc86950293.mp3" type="audio/mpeg">
     </audio>
- <!-- Top Bar -->
+
+    <!-- Top Bar -->
     <header>
         <div class="brand-container">
             <div class="brand">KMHUD.STUDIO</div>
@@ -303,14 +318,15 @@
             <a href="#chronicles"><i class="fa-solid fa-book-open"></i> มหากาพย์</a>
             <a href="#youtube-section"><i class="fa-brands fa-youtube"></i> ข้อมูลยูทูป</a>
             <a href="#earth-nexus"><i class="fa-solid fa-globe"></i> สาระบบโลก</a>
-            <a href="#reservation"><i class="fa-solid fa-ticket"></i> สำรองที่นั่ง VIP</a>
+            <a href="#vip" class="...text-amber-400 font-semibold">สำรองที่นั่ง VIP</a>
         </nav>
         <button class="comm-btn active" id="comm-toggle">
             <span class="comm-dot"></span>
             <span id="comm-text">COMM: ONLINE</span>
         </button>
     </header>
-<!-- Hero Section -->
+
+    <!-- Hero Section -->
     <section class="hero" id="hero-container">
         <div class="bg-image"></div>
         <div class="space-stars"></div>
@@ -319,15 +335,15 @@
             <div class="archive-tag">EXCLUSIVE ARCHIVE // MEMBER PRIVILEGE</div>
             <p class="quote">"ในห้วงอวกาศอันเวิ้งว้าง... ก้าวเล็กๆ ของมนุษย์คนหนึ่ง ดังกึกก้องไปชั่วนิรันดร์<br>จากเศษผงธุลีดวงจันทร์ สู่เปลวเพลิงที่กำลังเต้นระบำ ณ ใจกลางโลก"</p>
             <div class="title-sub">THE LUNAR &amp; CORE CHRONICLE</div>
-            <h1 class="main-title">มหากาพย์ก้าวแรก<br>สู่ธรณิมิตแกนพิภพ</h1>
+            <h1 class="main-title">มหากาพย์ก้าวแรก<br>สู่ดวงจันทร์แกนพิภพ</h1>
             
-         <div class="acts-container">
+            <div class="acts-container">
                 <div class="act-item"><span>ACT I :</span> THE IGNITION</div>
                 <div class="act-item"><span>ACT II :</span> THE FAR SIDE</div>
                 <div class="act-item"><span>ACT III :</span> GEODYNAMO</div>
             </div>
 
-    <div class="hero-buttons">
+            <div class="hero-buttons">
                 <a href="#chronicles" class="btn-custom btn-gold"><i class="fa-solid fa-book-open"></i> อ่านบันทึกมหากาพย์</a>
                 <a href="#youtube-section" class="btn-custom btn-outline" style="border-color: #ff0000; color: #ff5555;"><i class="fa-brands fa-youtube"></i> ข้อมูล YouTube</a>
                 <a href="#earth-nexus" class="btn-custom btn-outline"><i class="fa-solid fa-compass"></i> สาระบบสังเกตการณ์ 3.8</a>
@@ -335,24 +351,25 @@
             </div>
         </div>
     </section>
-<!-- Chronicles Section (6 Blocks) -->
+
+    <!-- Chronicles Section (6 Blocks) -->
     <section id="chronicles">
         <div class="chronicles-header">
             <div style="font-family: 'Chakra Petch', sans-serif; font-size: 11px; color: var(--gold); letter-spacing: 3px; margin-bottom: 10px;">ROADMAP TO DEEP SPACE // EXCLUSIVE ARCHIVE</div>
             <h2 class="chronicles-title">MISSION PROGRESSION: จากอดีตสู่อนาคต</h2>
             <p class="chronicles-desc">เส้นทางแห่งการสำรวจจากรากฐานยุคบุกเบิก สู่การตั้งถิ่นฐานในห้วงอวกาศลึกและดาวเคราะห์เพื่อนบ้าน</p>
         </div>
-     <div class="youtube-shorts-container" style="position: relative; width: 100%; max-width: 315px; aspect-ratio: 9 / 16; margin: 20px auto;">
-     <iframe 
+<div class="youtube-shorts-container" style="position: relative; width: 100%; max-width: 315px; aspect-ratio: 9 / 16; margin: 20px auto;">
+  <iframe 
     src="https://www.youtube.com/embed/H5eNm1fM8B0" 
     title="KMHUD.STUDIO Shorts" 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px; border: none;" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen>
-     </iframe>
-     </div>
+  </iframe>
+</div>
  
-     </style>
+</style>
        <div class="cards-grid">
             <div class="story-card">
                 <div class="card-img-container"><img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Apollo"></div>
@@ -410,14 +427,15 @@
             </div>
         </div>
     </section>
-<!-- YouTube Dynamic API Section -->
+
+    <!-- YouTube Dynamic API Section -->
     <section id="youtube-section">
         <div style="text-align: center; margin-bottom: 40px;">
             <div style="font-family: 'Chakra Petch', sans-serif; font-size: 11px; color: var(--gold); letter-spacing: 3px; margin-bottom: 10px;">LIVE API FEED // YOUTUBE DATA</div>
             <h2 style="font-family: 'Orbitron', sans-serif; font-size: 28px; color: #fff;">วิดีโอแนะนำจากระบบสตรีมมิ่ง</h2>
         </div>
 
-    <div class="yt-container">
+        <div class="yt-container">
             <div class="yt-card">
                 <div class="yt-thumbnail-wrapper">
                     <img id="yt-img" src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Thumbnail">
@@ -434,8 +452,8 @@
         </div>
     </section>
 
-     <!-- Earth Nexus Section -->
-    <section id="earth-nexus" style="text-align: center; padding: 40px 20px;">
+<!-- Earth Nexus Section -->
+<section id="earth-nexus" style="text-align: center; padding: 40px 20px;">
     <h2 style="color: var(--gold); letter-spacing: 2px; margin-bottom: 5px; font-family: 'Orbitron', sans-serif;">สาระบบโลกและสนามพลังแม่เหล็ก</h2>
     <p style="color: #888; font-size: 13px; margin-bottom: 30px; font-family: 'Chakra Petch', sans-serif;">ระบบจำลองดาวเทียมและพิกัดวงโคจรโลกเสมือนจริงแบบเรียลไทม์</p>
     
@@ -446,12 +464,14 @@
             <div class="panel-item" style="margin-bottom: 15px;"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">LUNAR SEPARATION</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">384,400 <span style="font-size:11px; color:#38bdf8;">KM</span></span></div>
             <div class="panel-item"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">GEOMAGNETIC FLUX</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">0.65 <span style="font-size:11px; color:#38bdf8;">GAUSS</span></span></div>
         </div>
-<!-- Canvas แสดงผล 3 มิติ -->
+
+        <!-- Canvas แสดงผล 3 มิติ -->
         <div style="display: flex; flex-direction: column; align-items: center;">
             <div id="canvas-container" style="width: 418px; height: 418px; position: relative; border-radius: 50%; overflow: hidden; background: radial-gradient(circle, #050b14 0%, #000000 100%); box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);"></div>
             <p style="font-size: 11px; color: var(--gold); margin-top: 12px; font-family: 'Chakra Petch', sans-serif;">⟳ คลิกลากเพื่อหมุนสำรวจโลก 3 มิติ</p>
         </div>
-<!-- Panel ขวา -->
+
+        <!-- Panel ขวา -->
         <div class="panel" style="background: rgba(10, 15, 30, 0.8); border: 1px solid rgba(56, 189, 248, 0.3); padding: 20px; border-radius: 8px; text-align: left; width: 240px;">
             <div class="panel-item" style="margin-bottom: 15px;"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">CORE TEMPERATURE</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">6,000 <span style="font-size:11px; color:#38bdf8;">°C</span></span></div>
             <div class="panel-item" style="margin-bottom: 15px;"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">CORE COMPOSITION</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">85% <span style="font-size:11px; color:#38bdf8;">FE-NI</span></span></div>
@@ -459,11 +479,112 @@
         </div>
     </div>
     <a href="#reservation" class="warp-btn" style="display: inline-block; margin-top: 30px; padding: 12px 30px; background: linear-gradient(135deg, #38bdf8, #1d4ed8); color: #fff; text-decoration: none; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-weight: bold; letter-spacing: 1px;">กดเข้าวาปไปในแกนโลก [INITIATE CORE WARP]</a>
-     </section>
+</section>
+    <style>
+  /* กำหนดสไตล์ส่วนพื้นหลังและเอฟเฟกต์คลื่น */
+  .space-glitch-hero {
+    position: relative;
+    background-image: url(https://www.facebook.com/photo/?fbid=122114045949453191&set=a.122114007513453191); /* หรือใช้ Base64 / URL ของภาพ */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  /* เลเยอร์ความมืดและเงาดำดึงดูดสายตา */
+  .space-glitch-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(11, 15, 25, 0.7), rgba(11, 15, 25, 0.95)),
+                radial-gradient(circle at center, transparent 20%, rgba(0,0,0,0.8) 90%);
+    z-index: 1;
+  }
+
+  /* เอฟเฟกต์คลื่นสัญญาณรบกวนขยับตัว (Scanlines & Wave Distortion) */
+  .space-glitch-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0),
+      rgba(255,255,255,0) 50%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.4)
+    );
+    background-size: 100% 4px;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.6;
+    animation: waveScan 8s linear infinite;
+  }
+
+  @keyframes waveScan {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 100px;
+    }
+  }
+
+  /* คลื่นระลอกแสงไซเบอร์ขยับผ่านหน้าจอ (Glitch Pulse) */
+  .glitch-wave-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.08) 0%, transparent 60%);
+    z-index: 2;
+    pointer-events: none;
+    animation: pulseGlow 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulseGlow {
+    0% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0.7;
+      transform: scale(1.05);
+    }
+  }
+
+  /* ทำให้เนื้อหาด้านบนอยู่เหนือเลเยอร์เอฟเฟกต์ */
+  .hero-content-wrapper {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+  }
+</style>
+
+<!-- โครงสร้างการใช้งาน -->
+<section class="space-glitch-hero">
+  <!-- เลเยอร์คลื่นแสงกระพริบ -->
+  <div class="glitch-wave-overlay"></div>
+
+  <!-- เนื้อหาของคุณ -->
+  <div class="hero-content-wrapper max-w-4xl mx-auto text-center px-4 py-16">
+    <p class="text-amber-400/90 italic text-lg mb-4 drop-shadow-[0_2px_10px_rgba(245,158,11,0.3)]">
+      "🚀THE POWER OF DREAMS:จากรอยเท้าบนดวงจันทร์ สู่พลังงานขับเคลื่อนอนาคต"
+    </p>
+    <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-6 drop-shadow-lg">
+      THE LUNAR & CORE CHRONICLE
+    </h1>
+    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto drop-shadow">
+      ร่วมเป็นส่วนหนึ่งของสถานีอวกาศพรีเมียม เม็ดเงินสนับสนุนทุกบาททุกสตางค์ถูกนำมาลงทุนเพื่อขับเคลื่อนโดเมนหลักและพัฒนาประสบการณ์ที่ดีที่สุดสำหรับคุณ
+    </p>
+  </div>
+</section>
 
 <!-- Three.js Realistic Script -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
     const container = document.getElementById('canvas-container');
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
@@ -551,44 +672,302 @@
         renderer.render(scene, camera);
     }
     animate();
-    </script>
-    <!-- Reservation Section -->
-    <section id="reservation">
-        <div class="reservation-box">
-            <h2 style="color: var(--gold); font-family: 'Orbitron', sans-serif; margin-bottom: 8px; font-size: 22px;">สำรองที่นั่ง VIP ของคุณ</h2>
-            <p style="color: #aaa; font-size: 13px; margin-bottom: 25px; font-family: 'Chakra Petch', sans-serif;">กรอกข้อมูลให้ครบถ้วนเพื่อลงทะเบียนเข้าร่วมภารกิจพิเศษ</p>
-            
-            <form id="reservation-form">
-                <div class="form-group">
-                    <label>ชื่อ-นามสกุล / โค้ดเนม (NAME)</label>
-                    <input type="text" id="res-name" placeholder="ระบุชื่อของคุณ" required>
-                </div>
-                <div class="form-group">
-                    <label>ช่องทางติดต่อสื่อสาร (COMMUNICATION CHANNEL)</label>
-                    <input type="email" id="res-email" placeholder="name@domain.com" required>
-                </div>
-                <div class="form-group">
-                    <label>ระดับที่นั่งและการสมัครสมาชิก (VIP TIER)</label>
-                    <select id="res-tier" required>
-                        <option value="" disabled selected>-- เลือกระดับที่นั่ง / รอบสมาชิก --</option>
-                        <option value="Commander Class">Commander Class (ระดับผู้บัญชาการ)</option>
-                        <option value="Pilot Class">Pilot Class (ระดับนักบินอวกาศ)</option>
-                        <option value="Observer Class">Observer Class (ระดับผู้สังเกตการณ์)</option>
-                        <option value="Monthly Member Pass">Monthly Member Pass (สมาชิกรายเดือน)</option>
-                    </select>
-                </div>
-                <button type="submit" class="submit-btn">ยืนยันการสำรองที่นั่ง [CONFIRM RESERVATION]</button>
-            </form>
+</script>
 
-            <div id="success-ticket-card" class="success-ticket">
-                <h3 style="color: #22c55e; font-family: 'Orbitron', sans-serif; margin-bottom: 10px;"><i class="fa-solid fa-circle-check"></i> ลงทะเบียนสำเร็จ!</h3>
-                <p>รหัสตั๋ว VIP: <span id="out-ticket-id" style="color:var(--gold); font-weight:bold;"></span></p>
-                <p>ชื่อ: <span id="out-name" style="color:#fff;"></span></p>
-                <p>แพ็กเกจ: <span id="out-tier" style="color:var(--gold);"></span></p>
-            </div>
+    <!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KMHUD.STUDIO | The Lunar & Earth Nexus 3.8</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0f19;
+      color: #e2e8f0;
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen">
+
+  <!-- Navigation Bar -->
+  <header class="border-b border-slate-800 bg-[#0b0f19]/80 backdrop-blur sticky top-0 z-50 px-4 py-3 flex justify-between items-center max-w-7xl mx-auto">
+    <div class="flex items-center gap-3">
+      <span class="font-bold tracking-wider text-white text-lg">KMHUD.STORY</span>
+      <span class="text-xs bg-amber-500/20 text-amber-400 border border-amber-500/30 px-2 py-0.5 rounded">STORY 3.8</span>
+    </div>
+    <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+  <a href="#about-section" onclick="toggleAboutModal(event)" class="hover:text-amber-400 transition">เกี่ยวกับ KMHUD.STUDIO</a>
+  <a href="https://www.facebook.com/profile.php?id=61593595747385" target="_blank" class="hover:text-amber-400 transition">FACEBOOK</a>
+  <a href="#earth-modal" onclick="toggleEarthModal(event)" class="hover:text-amber-400 transition">EARTH-PHOTOGRAPHY</a>
+  <a href="#vip" class="text-amber-400 font-semibold">สำรองที่นั่ง VIP</a>
+</nav>
+    <div class="flex items-center gap-2 text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded-full">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      ⚡MOONLIGHT:ONLINE
+    </div>
+  </header>
+
+  <!-- Hero Intro -->
+  <section class="max-w-4xl mx-auto text-center px-4 py-16">
+    <p class="text-amber-400/90 italic text-lg mb-4">
+      "🚀THE POWER OF DREAMS:จากรอยเท้าบนดวงจันทร์ สู่พลังงานขับเคลื่อนอนาคต"
+    </p>
+    <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+      THE LUNAR & CORE CHRONICLE
+    </h1>
+    <p class="text-slate-400 text-base sm:text-lg">
+      ร่วมเป็นส่วนหนึ่งของสถานีอวกาศพรีเมียม เม็ดเงินสนับสนุนทุกบาททุกสตางค์ถูกนำมาลงทุนเพื่อขับเคลื่อนโดเมนหลักและพัฒนาประสบการณ์ที่ดีที่สุดสำหรับคุณ
+    </p>
+  </section>
+
+  <!-- Pricing / VIP Reservation Section (The "Mix") -->
+  <section id="vip" class="max-w-7xl mx-auto px-4 py-12">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30 mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+        EXCLUSIVE VIP TIER & ACCESS
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
+        เลือกระดับสมาชิกและสำรองที่นั่งของคุณ
+      </h2>
+      <p class="text-slate-400 text-base">
+        ปลดล็อกสิทธิ์เข้าถึงฟังก์ชันพรีเมียม สตรีมมิ่งเพลงต่อเนื่อง และร่วมเป็นเจ้าของโดเมนหลักอย่างเป็นทางการร่วมกัน
+      </p>
+
+      <!-- Billing Toggle -->
+      <div class="mt-8 inline-flex items-center gap-3 p-1.5 bg-slate-900 rounded-xl border border-slate-800 shadow-inner">
+        <button id="monthlyBtn" onclick="toggleBilling('monthly')" class="px-4 py-1.5 text-sm font-semibold rounded-lg transition-all bg-amber-500 text-slate-950 shadow-sm">
+          รายเดือน (Monthly)
+        </button>
+        <button id="annualBtn" onclick="toggleBilling('annual')" class="px-4 py-1.5 text-sm font-semibold rounded-lg transition-all text-slate-400 hover:text-white">
+          รายปี (Annual)
+        </button>
+        <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-md">ประหยัด 20%</span>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch mb-16">
+      <!-- Observer Class -->
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-8 flex flex-col justify-between shadow-sm hover:border-slate-700 transition-all">
+        <div>
+          <div class="flex justify-between items-baseline mb-4">
+            <h3 class="text-lg font-bold text-white">Observer Class</h3>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-slate-800 text-slate-300">ผู้สังเกตการณ์</span>
+          </div>
+          <p class="text-sm text-slate-400 mb-6">สิทธิ์พื้นฐานในการเข้าชมบทความมหากาพย์และฟังเพลงสตรีมมิ่ง</p>
+          <div class="flex items-baseline gap-1 mb-6">
+            <span class="text-4xl font-extrabold text-white price-val" data-monthly="฿190" data-annual="฿150">฿190</span>
+            <span class="text-sm text-slate-400 font-medium">/ เดือน</span>
+          </div>
+          <ul class="space-y-3.5 text-sm text-slate-300 border-t border-slate-800 pt-6">
+            <li class="flex items-center gap-3">✓ เข้าถึงคลังบันทึกมหากาพย์ครบทุกตอน</li>
+            <li class="flex items-center gap-3">✓ ฟังเพลงสตรีมมิ่งคุณภาพสูง</li>
+            <li class="flex items-center gap-3 text-slate-500 line-through">✕ สิทธิ์โหวตทิศทางพัฒนาโดเมนหลัก</li>
+          </ul>
         </div>
-    </section>
+        <button onclick="selectTier('Observer Class')" class="mt-8 w-full py-3 px-4 rounded-xl border border-slate-700 text-slate-200 text-sm font-semibold hover:bg-slate-800 transition-colors">
+          เลือกแพ็กเกจนี้
+        </button>
+      </div>
 
+      <!-- Pilot Class (Highlighted) -->
+      <div class="relative rounded-2xl border-2 border-amber-500 bg-slate-900 p-8 flex flex-col justify-between shadow-2xl ring-4 ring-amber-500/10">
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 text-xs font-extrabold px-3.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+          แนะนำยอดนิยม (Most Popular)
+        </div>
+        <div>
+          <div class="flex justify-between items-baseline mb-4">
+            <h3 class="text-lg font-bold text-white">Pilot Class</h3>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-400">นักบินอวกาศ</span>
+          </div>
+          <p class="text-sm text-slate-400 mb-6">สิทธิพิเศษเต็มรูปแบบ พร้อมประสบการณ์ฟังเพลงต่อเนื่องไม่มีสะดุด</p>
+          <div class="flex items-baseline gap-1 mb-6">
+            <span class="text-4xl font-extrabold text-white price-val" data-monthly="฿490" data-annual="฿390">฿490</span>
+            <span class="text-sm text-slate-400 font-medium">/ เดือน</span>
+          </div>
+          <ul class="space-y-3.5 text-sm text-slate-300 border-t border-slate-800 pt-6">
+            <li class="flex items-center gap-3 text-white font-medium">✓ สิทธิ์นักบินอวกาศ VIP เต็มรูปแบบ</li>
+            <li class="flex items-center gap-3">✓ เล่นเพลงต่อเนื่องขณะเปิดหน้าต่างอื่น</li>
+            <li class="flex items-center gap-3">✓ ร่วมเป็นส่วนหนึ่งในการสนับสนุนโดเมนหลัก</li>
+          </ul>
+        </div>
+        <button onclick="selectTier('Pilot Class')" class="mt-8 w-full py-3 px-4 rounded-xl bg-amber-500 text-slate-950 text-sm font-bold hover:bg-amber-400 transition-colors shadow-lg">
+          เลือกแพ็กเกจนี้ (ยอดนิยม)
+        </button>
+      </div>
+
+      <!-- Commander Class -->
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-8 flex flex-col justify-between shadow-sm hover:border-slate-700 transition-all">
+        <div>
+          <div class="flex justify-between items-baseline mb-4">
+            <h3 class="text-lg font-bold text-white">Commander Class</h3>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-slate-800 text-slate-300">ผู้บัญชาการ</span>
+          </div>
+          <p class="text-sm text-slate-400 mb-6">ระดับสูงสุดสำหรับผู้สนับสนุนหลักในการผลักดันโปรเจกต์สตรีมมิ่งพรีเมียม</p>
+          <div class="flex items-baseline gap-1 mb-6">
+            <span class="text-4xl font-extrabold text-white price-val" data-monthly="฿1,490" data-annual="฿1,190">฿1,490</span>
+            <span class="text-sm text-slate-400 font-medium">/ เดือน</span>
+          </div>
+          <ul class="space-y-3.5 text-sm text-slate-300 border-t border-slate-800 pt-6">
+            <li class="flex items-center gap-3">✓ สิทธิ์ผู้บัญชาการสูงสุดทุกฟังก์ชัน</li>
+            <li class="flex items-center gap-3">✓ เครดิตชื่อเสียงในหน้าผู้สนับสนุนหลัก</li>
+            <li class="flex items-center gap-3">✓ สิทธิพิเศษในการทดลองฟีเจอร์ใหม่ก่อนใคร</li>
+          </ul>
+        </div>
+        <button onclick="selectTier('Commander Class')" class="mt-8 w-full py-3 px-4 rounded-xl border border-slate-700 text-slate-200 text-sm font-semibold hover:bg-slate-800 transition-colors">
+          เลือกแพ็กเกจนี้
+        </button>
+      </div>
+    </div>
+
+    <!-- Original Registration Form Box -->
+    <div class="max-w-2xl mx-auto rounded-2xl border border-slate-800 bg-slate-900/80 p-8 shadow-xl">
+      <h3 class="text-xl font-bold text-white mb-2 text-center">สำรองที่นั่ง VIP ของคุณ</h3>
+      <p class="text-xs text-slate-400 text-center mb-6">กรอกข้อมูลให้ครบถ้วนเพื่อลงทะเบียนเข้าร่วมภารกิจพิเศษ</p>
+      
+      <form onsubmit="handleReservation(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">ชื่อ-นามสกุล / โค้ดเนม (NAME)</label>
+          <input type="text" id="userName" required placeholder="ระบุชื่อของคุณ" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">ช่องทางติดต่อสื่อสาร (COMMUNICATION CHANNEL)</label>
+          <input type="email" id="userEmail" required placeholder="name@domain.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">ระดับที่นั่งและการสมัครสมาชิก (VIP TIER)</label>
+          <select id="res-tier" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+    <option value="" disabled selected>-- เลือกระดับที่นั่ง / รอบสมาชิก --</option>
+    <option value="Commander Class">Commander Class (ระดับผู้บัญชาการ) - ฿1,490 / เดือน</option>
+    <option value="Pilot Class">Pilot Class (ระดับนักบินอวกาศ) - ฿490 / เดือน</option>
+    <option value="Observer Class">Observer Class (ระดับผู้สังเกตการณ์) - ฿190 / เดือน</option>
+    <option value="Monthly Member Pass">Monthly Member Pass (สมาชิกรายเดือน)</option>
+</select>
+        </div>
+        <button type="submit" class="w-full py-3.5 px-4 rounded-xl bg-amber-500 text-slate-950 font-bold text-sm hover:bg-amber-400 transition-all shadow-lg mt-4">
+          ยืนยันการสำรองที่นั่ง [CONFIRM RESERVATION]
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Script for Billing & Interactions -->
+  <script>
+    function toggleBilling(period) {
+      const monthlyBtn = document.getElementById('monthlyBtn');
+      const annualBtn = document.getElementById('annualBtn');
+      const priceElements = document.querySelectorAll('.price-val');
+
+      if (period === 'annual') {
+        annualBtn.className = 'px-4 py-1.5 text-sm font-semibold rounded-lg transition-all bg-amber-500 text-slate-950 shadow-sm';
+        monthlyBtn.className = 'px-4 py-1.5 text-sm font-semibold rounded-lg transition-all text-slate-400 hover:text-white';
+        priceElements.forEach(el => el.textContent = el.getAttribute('data-annual'));
+      } else {
+        monthlyBtn.className = 'px-4 py-1.5 text-sm font-semibold rounded-lg transition-all bg-amber-500 text-slate-950 shadow-sm';
+        annualBtn.className = 'px-4 py-1.5 text-sm font-semibold rounded-lg transition-all text-slate-400 hover:text-white';
+        priceElements.forEach(el => el.textContent = el.getAttribute('data-monthly'));
+      }
+    }
+
+    function selectTier(tierName) {
+      const select = document.getElementById('userTier');
+      select.value = tierName;
+      document.getElementById('vip').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function handleReservation(e) {
+      e.preventDefault();
+      alert('บันทึกการสำรองที่นั่ง VIP สำเร็จ! ขอบคุณที่ร่วมเป็นส่วนหนึ่งของ KMHUD.STUDIO');
+    }
+  </script>
+</body>
+</html>
+<!-- Modal สำหรับ EARTH - PHOTOGRAPHY -->
+<div id="earth-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md hidden p-4">
+    <div class="bg-slate-900 border border-amber-500/40 rounded-2xl max-w-2xl w-full p-6 md:p-8 relative shadow-2xl text-center">
+        
+        <!-- ปุ่มปิดหน้าต่าง -->
+        <button onclick="toggleEarthModal(event)" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg font-bold bg-slate-800 px-3 py-1 rounded-full">✕ ปิด</button>
+
+        <!-- หัวข้อบล็อก -->
+        <h2 style="color: var(--gold); font-family: 'Orbitron', sans-serif; font-size: 20px; margin-bottom: 12px;">
+            🌍 EARTH - PHOTOGRAPHY & LUNAR GALLERY
+        </h2>
+        
+        <p class="text-slate-300 text-sm leading-relaxed mb-6" style="font-family: 'Chakra Petch', sans-serif;">
+            สัมผัสมุมมองภาพถ่ายแห่งโลกและดวงจันทร์ คลังภาพบันทึกความทรงจำและมูลค่าทางจิตวิญญาณแห่งห้วงอวกาศ ที่ถูกรวบรวมไว้ให้สมาชิกทุกท่านได้ร่วมรับชมและสำรวจไปด้วยกัน
+        </p>
+
+        <!-- ปุ่มลิงก์ตรงไปยังอัลบั้ม Facebook -->
+        <a href="https://www.facebook.com/media/set/?vanity=61593595747385&set=a.122114007513453191" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-amber-500/20 text-sm" style="font-family: 'Orbitron', sans-serif;">
+            🚀 เปิดดูอัลบั้มภาพบน Facebook
+        </a>
+    </div>
+</div>
+
+<!-- สคริปต์ควบคุมการเปิด-ปิดบล็อก Earth -->
+<script>
+function toggleEarthModal(e) {
+    e.preventDefault();
+    const modal = document.getElementById('earth-modal');
+    modal.classList.toggle('hidden');
+}
+</script>
+<!-- Modal / Section สำหรับบล็อกเกี่ยวกับ KMHUD.STUDIO -->
+<div id="about-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md hidden p-4">
+    <div class="bg-slate-900 border border-amber-500/40 rounded-2xl max-w-2xl w-full p-6 md:p-8 relative shadow-2xl overflow-y-auto max-h-[90vh]">
+        
+        <!-- ปุ่มปิดหน้าต่าง -->
+        <button onclick="toggleAboutModal(event)" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg font-bold bg-slate-800 px-3 py-1 rounded-full">✕ ปิด</button>
+
+        <!-- เนื้อหาบทความที่คุณต้องการ -->
+        <h2 style="color: var(--gold); font-family: 'Orbitron', sans-serif; font-size: 20px; margin-bottom: 16px;">
+            🚀 THE POWER OF DREAMS: จากรอยเท้าบนดวงจันทร์ สู่พลังงานขับเคลื่อนอนาคต
+        </h2>
+        
+        <div class="space-y-4 text-slate-300 text-sm leading-relaxed" style="font-family: 'Chakra Petch', sans-serif;">
+            <p>
+                ทุกความสำเร็จที่ยิ่งใหญ่ของมวลมนุษยชาติ ล้วนเริ่มต้นจากความกล้าที่จะ <strong>"ฝันในสิ่งที่ดูเหมือนเป็นไปไม่ได้"</strong> การที่เราสามารถส่งมนุษย์ก้าวข้ามแรงโน้มถ่วงของโลก ไปประทับรอยเท้าแรกบนดวงจันทร์ได้สำเร็จเมื่อปี 1969 ไม่ได้เป็นเพียงแค่ชัยชนะทางเทคโนโลยีเท่านั้น แต่มันคือเครื่องยืนยันว่า <strong>"เรื่องที่ยากที่สุด ก็สามารถกลายเป็นจริงได้"</strong> หากเรามีความพยายามและความจริงจังมากพอ
+            </p>
+
+            <h3 style="color: var(--gold); font-size: 16px; margin-top: 12px;">🌌 พันธกิจและตัวตนของ KMHUD.STUDIO</h3>
+            <p>
+                เว็บไซต์ KMHUD.STUDIO ถูกสร้างขึ้นมาไม่ใช่เพียงแค่พื้นที่แสดงผลงานทั่วไป แต่เราคือ <strong>"สถานีอวกาศจำลอง"</strong> ที่สร้างขึ้นเพื่อย้อนรำลึกและให้เกียรติแก่ความมุ่งมั่นของมวลมนุษย์ที่ทำสิ่งที่เป็นไปไม่ได้ให้เป็นจริง เราต้องการส่งต่อแรงบันดาลใจนี้ให้ผู้คนทั่วโลกกล้าที่จะลุกขึ้นมาสู้และทำตามความฝันของตนเองบนหลักความจริง
+            </p>
+
+            <h3 style="color: var(--gold); font-size: 16px; margin-top: 12px;">⚡ พลังงานแห่งแสงจันทร์และการเติบโตไปพร้อมกับสมาชิก</h3>
+            <p>
+                การเดินทางครั้งนี้เราไม่ได้เดินไปเพียงลำพัง เว็บไซต์ของเราจะก้าวไปข้างหน้าพร้อมกับ <strong>สมาชิกทุกระดับ</strong> ผู้มีความกล้าที่จะฝันและร่วมเป็นส่วนหนึ่งของภารกิจ เม็ดเงินสนับสนุนจากการสำรองที่นั่ง VIP ของสมาชิกทุกคน เปรียบเสมือน <strong>"พลังงานมวลสารและแสงสีนวลจากดวงจันทร์"</strong> ที่ถูกส่งกลับมาขับเคลื่อนระบบภายในเว็บของเราให้ทรงพลังยิ่งขึ้น
+            </p>
+            <p>
+                พลังงานเหล่านี้จะช่วยเปิดประตูมิติและฟีเจอร์ความบันเทิงสุดล้ำ (เช่น การสตรีมมิ่งเพลงต่อเนื่องขณะท่องเว็บ) ในรูปแบบที่ไม่มีใครเคยพาคุณไปสัมผัสที่ไหนมาก่อนบนโลกออนไลน์
+            </p>
+
+            <h3 style="color: var(--gold); font-size: 16px; margin-top: 12px;">📡 เตรียมพบกับบล็อกอัพเดตระดับสมาชิกเร็วๆ นี้</h3>
+            <p>
+                ทุกแรงสนับสนุนจากคุณ ยิ่งเติมเต็มพลังงานให้เว็บไซต์ KMHUD.STUDIO มีความแข็งแกร่งและพร้อมพาทุกคนไปทำทุกสิ่งให้สำเร็จได้แบบ <strong>"จบในที่เดียว"</strong>
+            </p>
+            <p class="text-amber-400 font-semibold pt-2">
+                ติดตามความเคลื่อนไหว บล็อกอัพเดต และสิทธิพิเศษของแต่ละระดับสมาชิกได้เร็วๆ นี้ — เพราะที่นี่คือโลกแห่งดวงจันทร์... The World of the Moon 🌕✨
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- สคริปต์ควบคุมการเปิด-ปิดหน้าต่างบทความ -->
+<script>
+function toggleAboutModal(e) {
+    e.preventDefault();
+    const modal = document.getElementById('about-modal');
+    modal.classList.toggle('hidden');
+}
+</script>
     <!-- Modal Popup -->
     <div class="modal-overlay" id="storyModal" onclick="closeModalOutside(event)">
         <div class="modal-box">
@@ -601,7 +980,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
         // Modal Data
@@ -712,7 +1091,7 @@
             document.getElementById('success-ticket-card').style.display = 'block';
         });
     </script>
-    <script>
+ <script>
     // ฟังก์ชันแจ้งเตือนสไตล์ล้ำๆ เมื่อกด "อ่านเพิ่มเติม"
     function triggerWarpAlert() {
         const alertOverlay = document.createElement('div');
@@ -764,6 +1143,6 @@
             document.body.removeChild(alertOverlay);
         };
     }
-     </script>
-    </body>
-    </html>    
+</script>
+</body>
+</html>
