@@ -1,7 +1,3 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:title" content="KMHUD.STUDIO | The Lunar & Earth Nexus 3.8">
     <meta property="og:description" content="ในห้วงอวกาศอันเวิ้งว้าง... ก้าวเล็กๆ ของมนุษย์คนหนึ่ง ดังกึกก้องไปชั่วนิรันดร์ จากเศษผงธุลีดวงจันทร์ สู่เปลวเพลิงที่กำลังเต้นระบำ ณ ใจกลางโลก">
@@ -340,7 +336,6 @@
             </div>
         </div>
     </section>
-
     <!-- Chronicles Section (6 Blocks) -->
     <section id="chronicles">
         <div class="chronicles-header">
@@ -440,7 +435,6 @@
             </div>
         </div>
     </section>
-
 <!-- Earth Nexus Section -->
 <section id="earth-nexus" style="text-align: center; padding: 40px 20px;">
     <h2 style="color: var(--gold); letter-spacing: 2px; margin-bottom: 5px; font-family: 'Orbitron', sans-serif;">สาระบบโลกและสนามพลังแม่เหล็ก</h2>
