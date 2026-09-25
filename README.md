@@ -5,15 +5,16 @@
     <meta property="og:url" content="https://tiny-violet-63f9.janjaow80.workers.dev/">
     <meta property="og:type" content="website">
 
-    <title>KMHUD.STUDIO | The Lunar &amp; Earth Nexus 3.8</title>
+
     
+     <title>KMHUD.STUDIO | The Lunar &amp; Earth Nexus 3.8</title>
     <!-- Google Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&amp;family=Orbitron:wght@500;700&amp;family=Prompt:wght@300;400;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <style>
+     <style>
 
         :root {
             --gold: #d4af37;
@@ -286,14 +287,13 @@
         .modal-body { padding: 30px; }
         .modal-close-btn { background: var(--gold); color: #000; border: none; padding: 10px 25px; font-family: 'Chakra Petch', sans-serif; font-weight: 600; cursor: pointer; border-radius: 4px; }
     </style>
-</head>
-<body>
+    </head>
+    <body>
 
     <audio id="bg-audio" loop>
         <source src="https://cdn.pixabay.com/download/audio/2022/02/10/audio_fc86950293.mp3" type="audio/mpeg">
     </audio>
-
-    <!-- Top Bar -->
+ <!-- Top Bar -->
     <header>
         <div class="brand-container">
             <div class="brand">KMHUD.STUDIO</div>
@@ -310,8 +310,7 @@
             <span id="comm-text">COMM: ONLINE</span>
         </button>
     </header>
-
-    <!-- Hero Section -->
+<!-- Hero Section -->
     <section class="hero" id="hero-container">
         <div class="bg-image"></div>
         <div class="space-stars"></div>
@@ -322,13 +321,13 @@
             <div class="title-sub">THE LUNAR &amp; CORE CHRONICLE</div>
             <h1 class="main-title">มหากาพย์ก้าวแรก<br>สู่ธรณิมิตแกนพิภพ</h1>
             
-            <div class="acts-container">
+         <div class="acts-container">
                 <div class="act-item"><span>ACT I :</span> THE IGNITION</div>
                 <div class="act-item"><span>ACT II :</span> THE FAR SIDE</div>
                 <div class="act-item"><span>ACT III :</span> GEODYNAMO</div>
             </div>
 
-            <div class="hero-buttons">
+    <div class="hero-buttons">
                 <a href="#chronicles" class="btn-custom btn-gold"><i class="fa-solid fa-book-open"></i> อ่านบันทึกมหากาพย์</a>
                 <a href="#youtube-section" class="btn-custom btn-outline" style="border-color: #ff0000; color: #ff5555;"><i class="fa-brands fa-youtube"></i> ข้อมูล YouTube</a>
                 <a href="#earth-nexus" class="btn-custom btn-outline"><i class="fa-solid fa-compass"></i> สาระบบสังเกตการณ์ 3.8</a>
@@ -336,23 +335,24 @@
             </div>
         </div>
     </section>
-    <!-- Chronicles Section (6 Blocks) -->
+<!-- Chronicles Section (6 Blocks) -->
     <section id="chronicles">
         <div class="chronicles-header">
             <div style="font-family: 'Chakra Petch', sans-serif; font-size: 11px; color: var(--gold); letter-spacing: 3px; margin-bottom: 10px;">ROADMAP TO DEEP SPACE // EXCLUSIVE ARCHIVE</div>
             <h2 class="chronicles-title">MISSION PROGRESSION: จากอดีตสู่อนาคต</h2>
             <p class="chronicles-desc">เส้นทางแห่งการสำรวจจากรากฐานยุคบุกเบิก สู่การตั้งถิ่นฐานในห้วงอวกาศลึกและดาวเคราะห์เพื่อนบ้าน</p>
         </div>
-<div class="youtube-shorts-container" style="position: relative; width: 100%; max-width: 315px; aspect-ratio: 9 / 16; margin: 20px auto;">
-  <iframe 
+     <div class="youtube-shorts-container" style="position: relative; width: 100%; max-width: 315px; aspect-ratio: 9 / 16; margin: 20px auto;">
+     <iframe 
     src="https://www.youtube.com/embed/H5eNm1fM8B0" 
     title="KMHUD.STUDIO Shorts" 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px; border: none;" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen>
-  </iframe>
-</div>
-</style>
+     </iframe>
+     </div>
+ 
+     </style>
        <div class="cards-grid">
             <div class="story-card">
                 <div class="card-img-container"><img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Apollo"></div>
@@ -410,15 +410,14 @@
             </div>
         </div>
     </section>
-
-    <!-- YouTube Dynamic API Section -->
+<!-- YouTube Dynamic API Section -->
     <section id="youtube-section">
         <div style="text-align: center; margin-bottom: 40px;">
             <div style="font-family: 'Chakra Petch', sans-serif; font-size: 11px; color: var(--gold); letter-spacing: 3px; margin-bottom: 10px;">LIVE API FEED // YOUTUBE DATA</div>
             <h2 style="font-family: 'Orbitron', sans-serif; font-size: 28px; color: #fff;">วิดีโอแนะนำจากระบบสตรีมมิ่ง</h2>
         </div>
 
-        <div class="yt-container">
+    <div class="yt-container">
             <div class="yt-card">
                 <div class="yt-thumbnail-wrapper">
                     <img id="yt-img" src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Thumbnail">
@@ -434,8 +433,9 @@
             </div>
         </div>
     </section>
-<!-- Earth Nexus Section -->
-<section id="earth-nexus" style="text-align: center; padding: 40px 20px;">
+
+     <!-- Earth Nexus Section -->
+    <section id="earth-nexus" style="text-align: center; padding: 40px 20px;">
     <h2 style="color: var(--gold); letter-spacing: 2px; margin-bottom: 5px; font-family: 'Orbitron', sans-serif;">สาระบบโลกและสนามพลังแม่เหล็ก</h2>
     <p style="color: #888; font-size: 13px; margin-bottom: 30px; font-family: 'Chakra Petch', sans-serif;">ระบบจำลองดาวเทียมและพิกัดวงโคจรโลกเสมือนจริงแบบเรียลไทม์</p>
     
@@ -446,14 +446,12 @@
             <div class="panel-item" style="margin-bottom: 15px;"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">LUNAR SEPARATION</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">384,400 <span style="font-size:11px; color:#38bdf8;">KM</span></span></div>
             <div class="panel-item"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">GEOMAGNETIC FLUX</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">0.65 <span style="font-size:11px; color:#38bdf8;">GAUSS</span></span></div>
         </div>
-
-        <!-- Canvas แสดงผล 3 มิติ -->
+<!-- Canvas แสดงผล 3 มิติ -->
         <div style="display: flex; flex-direction: column; align-items: center;">
             <div id="canvas-container" style="width: 418px; height: 418px; position: relative; border-radius: 50%; overflow: hidden; background: radial-gradient(circle, #050b14 0%, #000000 100%); box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);"></div>
             <p style="font-size: 11px; color: var(--gold); margin-top: 12px; font-family: 'Chakra Petch', sans-serif;">⟳ คลิกลากเพื่อหมุนสำรวจโลก 3 มิติ</p>
         </div>
-
-        <!-- Panel ขวา -->
+<!-- Panel ขวา -->
         <div class="panel" style="background: rgba(10, 15, 30, 0.8); border: 1px solid rgba(56, 189, 248, 0.3); padding: 20px; border-radius: 8px; text-align: left; width: 240px;">
             <div class="panel-item" style="margin-bottom: 15px;"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">CORE TEMPERATURE</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">6,000 <span style="font-size:11px; color:#38bdf8;">°C</span></span></div>
             <div class="panel-item" style="margin-bottom: 15px;"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">CORE COMPOSITION</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">85% <span style="font-size:11px; color:#38bdf8;">FE-NI</span></span></div>
@@ -461,11 +459,11 @@
         </div>
     </div>
     <a href="#reservation" class="warp-btn" style="display: inline-block; margin-top: 30px; padding: 12px 30px; background: linear-gradient(135deg, #38bdf8, #1d4ed8); color: #fff; text-decoration: none; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-weight: bold; letter-spacing: 1px;">กดเข้าวาปไปในแกนโลก [INITIATE CORE WARP]</a>
-</section>
+     </section>
 
 <!-- Three.js Realistic Script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
     const container = document.getElementById('canvas-container');
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
@@ -553,8 +551,7 @@
         renderer.render(scene, camera);
     }
     animate();
-</script>
-
+    </script>
     <!-- Reservation Section -->
     <section id="reservation">
         <div class="reservation-box">
@@ -604,7 +601,7 @@
             </div>
         </div>
     </div>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
         // Modal Data
@@ -715,7 +712,7 @@
             document.getElementById('success-ticket-card').style.display = 'block';
         });
     </script>
- <script>
+    <script>
     // ฟังก์ชันแจ้งเตือนสไตล์ล้ำๆ เมื่อกด "อ่านเพิ่มเติม"
     function triggerWarpAlert() {
         const alertOverlay = document.createElement('div');
@@ -752,6 +749,7 @@
                 </div>
             </div>
         `;
+
         document.body.appendChild(alertOverlay);
 
         document.getElementById('warp-action-btn').onclick = function() {
@@ -766,5 +764,6 @@
             document.body.removeChild(alertOverlay);
         };
     }
-</script>
-</body>
+     </script>
+    </body>
+    </html>    
