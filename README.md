@@ -355,8 +355,7 @@
 </style>
        <div class="cards-grid">
             <div class="story-card">
-                <div class="card-img-container"><img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Apollo">
-                </div>
+                <div class="card-img-container"><img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Apollo"></div>
                 <div class="story-content">
                     <div class="story-tag">CHRONICLE 01 // 1969 APOLLO TOUCHDOWN</div>
                     <div class="story-title">แสงวาบแรกกับการจุดระเบิด (The Ignition)</div>
