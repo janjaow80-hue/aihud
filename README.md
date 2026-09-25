@@ -348,15 +348,25 @@
             <h2 class="chronicles-title">MISSION PROGRESSION: จากอดีตสู่อนาคต</h2>
             <p class="chronicles-desc">เส้นทางแห่งการสำรวจจากรากฐานยุคบุกเบิก สู่การตั้งถิ่นฐานในห้วงอวกาศลึกและดาวเคราะห์เพื่อนบ้าน</p>
         </div>
-
-        <div class="cards-grid">
+<div class="youtube-shorts-container" style="position: relative; width: 100%; max-width: 315px; aspect-ratio: 9 / 16; margin: 20px auto;">
+  <iframe 
+    src="https://www.youtube.com/embed/H5eNm1fM8B0" 
+    title="KMHUD.STUDIO Shorts" 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px; border: none;" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+</div>
+ 
+</style>
+       <div class="cards-grid">
             <div class="story-card">
                 <div class="card-img-container"><img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Apollo"></div>
                 <div class="story-content">
                     <div class="story-tag">CHRONICLE 01 // 1969 APOLLO TOUCHDOWN</div>
                     <div class="story-title">แสงวาบแรกกับการจุดระเบิด (The Ignition)</div>
                     <p class="story-text">เสียงคำรามของเครื่องยนต์ Saturn V ขับเคลื่อนมวลมนุษย์ ฉีกผ่านแรงโน้มถ่วง มุ่งหน้าสู่มหาสมุทรแห่งความเงียบงัน</p>
-                    <button class="read-more-btn" onclick="openModal(1)">อ่านเพิ่มเติม →</button>
+                    <button class="read-more-btn" onclick="triggerWarpAlert()">อ่านเพิ่มเติม →</button>
                 </div>
             </div>
             <div class="story-card">
@@ -365,7 +375,7 @@
                     <div class="story-tag">CHRONICLE 02 // RADIO SILENCE</div>
                     <div class="story-title">ความลับบนเงามืดที่ไร้เสียงสะท้อน</div>
                     <p class="story-text">เมื่อยานอวกาศเคลื่อนผ่านเข้าสู่ด้านไกลของดวงจันทร์ สัญญาณวิทยุจากโลกถูกตัดขาด มนุษย์เผชิญหน้ากับความเงียบอันลึกซึ้ง</p>
-                    <button class="read-more-btn" onclick="openModal(2)">อ่านเพิ่มเติม →</button>
+                    <button class="read-more-btn" onclick="triggerWarpAlert()">อ่านเพิ่มเติม →</button>
                 </div>
             </div>
             <div class="story-card">
@@ -374,7 +384,7 @@
                     <div class="story-tag">CHRONICLE 03 // 6,371 KM DEPTH</div>
                     <div class="story-title">ไดนาโมพลังงานใต้แกนโลก</div>
                     <p class="story-text">ลึกลงไปใต้เปลือกหินคือโลหะเหลวร้อนราว 4,000-5,000°C การหมุนวนของมันสร้างสนามแม่เหล็กที่ปกป้องโลก</p>
-                    <button class="read-more-btn" onclick="openModal(3)">อ่านเพิ่มเติม →</button>
+                    <button class="read-more-btn" onclick="triggerWarpAlert()">อ่านเพิ่มเติม →</button>
                 </div>
             </div>
             <div class="story-card">
@@ -383,7 +393,7 @@
                     <div class="story-tag">CHRONICLE 04 // THE LUNAR GRID</div>
                     <div class="story-title">โครงข่ายพลังงานดาวบริวาร</div>
                     <p class="story-text">การสร้างสถานีส่งกำลังไฟฟ้าและขุดเจาะน้ำแข็งที่ขั้วดวงจันทร์ เพื่อเป็นฐานเสบียงหลักและจุดเติมเชื้อเพลิง</p>
-                    <button class="read-more-btn" onclick="openModal(4)">อ่านเพิ่มเติม →</button>
+                    <button class="read-more-btn" onclick="triggerWarpAlert()">อ่านเพิ่มเติม →</button>
                 </div>
             </div>
             <div class="story-card">
@@ -392,7 +402,7 @@
                     <div class="story-tag">CHRONICLE 05 // MARS HORIZON</div>
                     <div class="story-title">นิคมมนุษยชาติแห่งดาวอังคาร</div>
                     <p class="story-text">การตั้งถิ่นฐานถาวรแห่งแรกบนดาวอังคาร พัฒนาระบบปิดในการผลิตออกซิเจนและอาหาร</p>
-                    <button class="read-more-btn" onclick="openModal(5)">อ่านเพิ่มเติม →</button>
+                    <button class="read-more-btn" onclick="triggerWarpAlert()">อ่านเพิ่มเติม →</button>
                 </div>
             </div>
             <div class="story-card">
@@ -401,7 +411,7 @@
                     <div class="story-tag">CHRONICLE 06 // DEEP SPACE</div>
                     <div class="story-title">ขอบเขตห้วงอวกาศลึก</div>
                     <p class="story-text">ก้าวข้ามระบบสุริยะด้วยเทคโนโลยีขับเคลื่อนความเร็วสูง เปิดประตูสู่การสำรวจดาวเคราะห์นอกระบบ</p>
-                    <button class="read-more-btn" onclick="openModal(6)">อ่านเพิ่มเติม →</button>
+                    <button class="read-more-btn" onclick="triggerWarpAlert()">อ่านเพิ่มเติม →</button>
                 </div>
             </div>
         </div>
@@ -423,7 +433,7 @@
                     <div class="yt-channel" id="yt-channel">CHANNEL: RICK ASTLEY</div>
                     <h3 class="yt-title" id="yt-title">Rick Astley - Never Gonna Give You Up (Official Video)</h3>
                     <p class="yt-desc" id="yt-desc">The official video for “Never Gonna Give You Up” was a global smash on its release in July 1987...</p>
-                    <a id="yt-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="yt-btn">
+                    <a id="yt-link" href="https://youtube.com/shorts/tcSWOS1yq7s?si=aY6tSRbA05HkBdx1" target="_blank" class="yt-btn">
                         <i class="fa-brands fa-youtube"></i> รับชมวิดีโอบบน YouTube
                     </a>
                 </div>
@@ -431,31 +441,126 @@
         </div>
     </section>
 
-    <!-- Earth Nexus Section -->
-    <section id="earth-nexus">
-        <h2 style="color: var(--gold); letter-spacing: 2px; margin-bottom: 5px; font-family: 'Orbitron', sans-serif;">สาระบบโลกและสนามพลังแม่เหล็ก</h2>
-        <p style="color: #888; font-size: 13px; margin-bottom: 30px; font-family: 'Chakra Petch', sans-serif;">แบบจำลองวิถี 3 มิติ สมจริง พร้อมดวงดาวรอบวงโคจรกะพริบ</p>
-        
-        <div class="nexus-wrapper">
-            <div class="panel">
-                <div class="panel-item"><span class="panel-label">ORBITAL VELOCITY</span><span class="panel-value">29.78 <span style="font-size:11px; color:#aaa;">KM/S</span></span></div>
-                <div class="panel-item"><span class="panel-label">LUNAR SEPARATION</span><span class="panel-value">384,400 <span style="font-size:11px; color:#aaa;">KM</span></span></div>
-                <div class="panel-item"><span class="panel-label">GEOMAGNETIC FLUX</span><span class="panel-value">0.65 <span style="font-size:11px; color:#aaa;">GAUSS</span></span></div>
-            </div>
-
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <div id="canvas-container"></div>
-                <p style="font-size: 11px; color: var(--gold); margin-top: 12px; font-family: 'Chakra Petch', sans-serif;">⟳ คลิกลากเพื่อหมุนสำรวจโลก 3 มิติ</p>
-            </div>
-
-            <div class="panel">
-                <div class="panel-item"><span class="panel-label">CORE TEMPERATURE</span><span class="panel-value">6,000 <span style="font-size:11px; color:#aaa;">°C</span></span></div>
-                <div class="panel-item"><span class="panel-label">CORE COMPOSITION</span><span class="panel-value">85% <span style="font-size:11px; color:#aaa;">FE-NI</span></span></div>
-                <div class="panel-item"><span class="panel-label">SCHUMANN RESONANCE</span><span class="panel-value">7.83 <span style="font-size:11px; color:#aaa;">HZ</span></span></div>
-            </div>
+<!-- Earth Nexus Section -->
+<section id="earth-nexus" style="text-align: center; padding: 40px 20px;">
+    <h2 style="color: var(--gold); letter-spacing: 2px; margin-bottom: 5px; font-family: 'Orbitron', sans-serif;">สาระบบโลกและสนามพลังแม่เหล็ก</h2>
+    <p style="color: #888; font-size: 13px; margin-bottom: 30px; font-family: 'Chakra Petch', sans-serif;">ระบบจำลองดาวเทียมและพิกัดวงโคจรโลกเสมือนจริงแบบเรียลไทม์</p>
+    
+    <div class="nexus-wrapper" style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
+        <!-- Panel ซ้าย -->
+        <div class="panel" style="background: rgba(10, 15, 30, 0.8); border: 1px solid rgba(56, 189, 248, 0.3); padding: 20px; border-radius: 8px; text-align: left; width: 240px;">
+            <div class="panel-item" style="margin-bottom: 15px;"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">ORBITAL VELOCITY</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">29.78 <span style="font-size:11px; color:#38bdf8;">KM/S</span></span></div>
+            <div class="panel-item" style="margin-bottom: 15px;"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">LUNAR SEPARATION</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">384,400 <span style="font-size:11px; color:#38bdf8;">KM</span></span></div>
+            <div class="panel-item"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">GEOMAGNETIC FLUX</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">0.65 <span style="font-size:11px; color:#38bdf8;">GAUSS</span></span></div>
         </div>
-        <a href="#reservation" class="warp-btn">กดเข้าวาปไปในแกนโลก [INITIATE CORE WARP]</a>
-    </section>
+
+        <!-- Canvas แสดงผล 3 มิติ -->
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div id="canvas-container" style="width: 418px; height: 418px; position: relative; border-radius: 50%; overflow: hidden; background: radial-gradient(circle, #050b14 0%, #000000 100%); box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);"></div>
+            <p style="font-size: 11px; color: var(--gold); margin-top: 12px; font-family: 'Chakra Petch', sans-serif;">⟳ คลิกลากเพื่อหมุนสำรวจโลก 3 มิติ</p>
+        </div>
+
+        <!-- Panel ขวา -->
+        <div class="panel" style="background: rgba(10, 15, 30, 0.8); border: 1px solid rgba(56, 189, 248, 0.3); padding: 20px; border-radius: 8px; text-align: left; width: 240px;">
+            <div class="panel-item" style="margin-bottom: 15px;"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">CORE TEMPERATURE</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">6,000 <span style="font-size:11px; color:#38bdf8;">°C</span></span></div>
+            <div class="panel-item" style="margin-bottom: 15px;"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">CORE COMPOSITION</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">85% <span style="font-size:11px; color:#38bdf8;">FE-NI</span></span></div>
+            <div class="panel-item"><span class="panel-label" style="display: block; font-size: 10px; color: #888;">SCHUMANN RESONANCE</span><span class="panel-value" style="font-size: 18px; color: #fff; font-family: 'Orbitron', sans-serif;">7.83 <span style="font-size:11px; color:#38bdf8;">HZ</span></span></div>
+        </div>
+    </div>
+    <a href="#reservation" class="warp-btn" style="display: inline-block; margin-top: 30px; padding: 12px 30px; background: linear-gradient(135deg, #38bdf8, #1d4ed8); color: #fff; text-decoration: none; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-weight: bold; letter-spacing: 1px;">กดเข้าวาปไปในแกนโลก [INITIATE CORE WARP]</a>
+</section>
+
+<!-- Three.js Realistic Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+    const container = document.getElementById('canvas-container');
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
+    camera.position.z = 2.7;
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(418, 418);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    container.innerHTML = '';
+    container.appendChild(renderer.domElement);
+
+    const earthGroup = new THREE.Group();
+    scene.add(earthGroup);
+
+    // จัดแสงสว่าง
+    scene.add(new THREE.AmbientLight(0x333333, 1.5));
+    const sunLight = new THREE.DirectionalLight(0xffffff, 2.0);
+    sunLight.position.set(5, 3, 5);
+    scene.add(sunLight);
+
+    // โหลดเท็กเจอร์พื้นผิวโลกแบบสมจริง
+    const textureLoader = new THREE.TextureLoader();
+    const earthGeometry = new THREE.SphereGeometry(1, 64, 64);
+    
+    const earthMaterial = new THREE.MeshStandardMaterial({
+        roughness: 0.6,
+        metalness: 0.1,
+        map: textureLoader.load('https://threejs.org/examples/textures/planets/earth_atmos_2048.jpg'),
+        bumpMap: textureLoader.load('https://threejs.org/examples/textures/planets/earth_normal_2048.jpg'),
+        bumpScale: 0.03,
+        specularMap: textureLoader.load('https://threejs.org/examples/textures/planets/earth_specular_2048.jpg')
+    });
+
+    const earthMesh = new THREE.Mesh(earthGeometry, earthMaterial);
+    earthGroup.add(earthMesh);
+
+    // ชั้นบรรยากาศเรืองแสงรอบโลก (Atmosphere Glow)
+    const atmosphereGeometry = new THREE.SphereGeometry(1.03, 64, 64);
+    const atmosphereMaterial = new THREE.MeshStandardMaterial({
+        color: 0x3b82f6,
+        transparent: true,
+        opacity: 0.2,
+        blending: THREE.AdditiveBlending,
+        side: THREE.BackSide
+    });
+    earthGroup.add(new THREE.Mesh(atmosphereGeometry, atmosphereMaterial));
+
+    // เพิ่มวงโคจรดาวเทียมรอบโลก
+    const orbitGroup = new THREE.Group();
+    const orbitMat = new THREE.LineBasicMaterial({ color: 0x38bdf8, transparent: true, opacity: 0.4 });
+
+    for (let i = 0; i < 3; i++) {
+        const points = [];
+        const radius = 1.18 + (i * 0.08);
+        for (let j = 0; j <= 100; j++) {
+            const theta = (j / 100) * Math.PI * 2;
+            points.push(new THREE.Vector3(Math.cos(theta) * radius, 0, Math.sin(theta) * radius));
+        }
+        const orbitGeo = new THREE.BufferGeometry().setFromPoints(points);
+        const orbitLine = new THREE.Line(orbitGeo, orbitMat);
+        orbitLine.rotation.x = Math.random() * Math.PI;
+        orbitLine.rotation.z = Math.random() * Math.PI;
+        orbitGroup.add(orbitLine);
+    }
+    earthGroup.add(orbitGroup);
+
+    // ควบคุมการหมุนด้วยเมาส์
+    let isDragging = false, prevMouse = { x: 0, y: 0 };
+    container.addEventListener('mousedown', (e) => { isDragging = true; prevMouse = { x: e.clientX, y: e.clientY }; });
+    window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        earthGroup.rotation.y += (e.clientX - prevMouse.x) * 0.005;
+        earthGroup.rotation.x += (e.clientY - prevMouse.y) * 0.005;
+        prevMouse = { x: e.clientX, y: e.clientY };
+    });
+    window.addEventListener('mouseup', () => { isDragging = false; });
+
+    // ลูปอนิเมชัน
+    function animate() {
+        requestAnimationFrame(animate);
+        if (!isDragging) {
+            earthGroup.rotation.y += 0.001;
+            orbitGroup.rotation.y -= 0.0005;
+        }
+        renderer.render(scene, camera);
+    }
+    animate();
+</script>
 
     <!-- Reservation Section -->
     <section id="reservation">
@@ -617,3 +722,58 @@
             document.getElementById('success-ticket-card').style.display = 'block';
         });
     </script>
+ <script>
+    // ฟังก์ชันแจ้งเตือนสไตล์ล้ำๆ เมื่อกด "อ่านเพิ่มเติม"
+    function triggerWarpAlert() {
+        const alertOverlay = document.createElement('div');
+        alertOverlay.style.cssText = `
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0, 5, 15, 0.85); backdrop-filter: blur(8px);
+            display: flex; justify-content: center; align-items: center; z-index: 9999;
+            font-family: 'Orbitron', sans-serif; animation: fadeIn 0.3s ease;
+        `;
+
+        alertOverlay.innerHTML = `
+            <div style="
+                background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(3, 7, 18, 0.95));
+                border: 2px solid #38bdf8; box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+                padding: 30px; border-radius: 12px; text-align: center; max-width: 420px; width: 90%;
+                position: relative;
+            ">
+                <div style="color: #38bdf8; font-size: 12px; letter-spacing: 3px; margin-bottom: 10px;">[ SECURITY CLEARANCE REQUIRED ]</div>
+                <h3 style="color: #fff; font-size: 18px; margin-bottom: 15px; letter-spacing: 1px;">สิทธิ์การเข้าถึงข้อมูลลับถูกจำกัด</h3>
+                <p style="color: #94a3b8; font-size: 13px; font-family: 'Chakra Petch', sans-serif; margin-bottom: 25px; line-height: 1.6;">
+                    โปรดสำรองที่นั่ง รับสิทธิ์วาปแกนโลกเต็มรูปแบบ เพื่อปลดล็อกฐานข้อมูลมหากาพย์และเน็ตเวิร์กทั้งหมด
+                </p>
+                <div style="display: flex; gap: 10px; justify-content: center;">
+                    <button id="warp-action-btn" style="
+                        background: linear-gradient(135deg, #38bdf8, #1d4ed8); color: #fff; border: none;
+                        padding: 10px 20px; border-radius: 4px; font-family: 'Orbitron', sans-serif; font-weight: bold;
+                        cursor: pointer; letter-spacing: 1px; box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+                    ">ยืนยันสำรองที่นั่ง</button>
+                    <button id="warp-close-btn" style="
+                        background: transparent; color: #94a3b8; border: 1px solid #475569;
+                        padding: 10px 20px; border-radius: 4px; font-family: 'Orbitron', sans-serif;
+                        cursor: pointer;
+                    ">ปิดหน้าต่าง</button>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(alertOverlay);
+
+        document.getElementById('warp-action-btn').onclick = function() {
+            document.body.removeChild(alertOverlay);
+            const reservationSection = document.getElementById('reservation');
+            if (reservationSection) {
+                reservationSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        };
+
+        document.getElementById('warp-close-btn').onclick = function() {
+            document.body.removeChild(alertOverlay);
+        };
+    }
+</script>
+</body>
+</html>
